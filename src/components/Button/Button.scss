@@ -1,0 +1,32 @@
+$white: #fff;
+$dark-grey: #242424;
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  font-size: 20px;
+
+  &--primary {
+    background-color: $white;
+    color: $dark-grey;
+  }
+
+  &--outline {
+    color: $white;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: $dark-grey;
+      background-color: $white;
+    }
+  }
+
+  &--primary,
+  &--outline {
+    border: 1px solid $white;
+  }
+
+  &--large {
+    padding: 12px 26px;
+  }
+}
