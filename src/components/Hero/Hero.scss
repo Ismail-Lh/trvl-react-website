@@ -1,0 +1,47 @@
+.hero {
+  &-container {
+    //  background-image: url('images/img-home.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba($color: #000000, $alpha: 0.2);
+    object-fit: contain;
+
+    video {
+      object-fit: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 100px;
+      text-transform: uppercase;
+      margin-top: -100px;
+    }
+
+    p {
+      margin-top: 8px;
+      color: #fff;
+      font-size: 32px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    }
+  }
+
+  &-btns {
+    margin-top: 32px;
+    .btn {
+      margin: 6px;
+    }
+
+    .fa-play-circle {
+      margin-left: 4px;
+    }
+  }
+}
