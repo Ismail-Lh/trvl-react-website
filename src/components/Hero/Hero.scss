@@ -23,6 +23,16 @@
       font-size: 100px;
       text-transform: uppercase;
       margin-top: -100px;
+
+      @media (max-width: 960px) {
+        font-size: 70px;
+        margin-top: -150px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 50px;
+        margin-top: -100px;
+      }
     }
 
     p {
@@ -31,6 +41,10 @@
       font-size: 32px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -38,6 +52,17 @@
     margin-top: 32px;
     .btn {
       margin: 6px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &--mobile {
+        @media (max-width: 768px) {
+          display: block;
+          text-decoration: none;
+        }
+      }
     }
 
     .fa-play-circle {
