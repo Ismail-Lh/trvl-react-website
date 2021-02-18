@@ -1,4 +1,6 @@
 import React from 'react';
+
+import '../App.scss';
 import { Cards, Hero } from '../components';
 
 const Home = () => {

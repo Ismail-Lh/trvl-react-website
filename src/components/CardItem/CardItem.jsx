@@ -10,8 +10,8 @@ const CardItem = ({ src, text, path, label }) => {
             <img src={src} alt='travel img' className='cards__item__img' />
           </figure>
 
-          <div className='crads__item__info'>
-            <h5 className='cards__item__text'>{text}</h5>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'>{text}hello</h5>
           </div>
         </Link>
       </li>
